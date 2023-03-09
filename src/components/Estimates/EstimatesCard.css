@@ -1,0 +1,9 @@
+
+          
+              /* ---------=============   Estimates Card Header  ==========--------- */
+          
+.cardheader{
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}

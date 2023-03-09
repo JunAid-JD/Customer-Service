@@ -1,0 +1,116 @@
+
+/*  ------=============  Work Orders Detail Return Button ==========------  */
+#HeaderReturnBtn{
+    background-color: black !important; 
+    color: white !important;
+    font-size: 12px !important;
+}
+#HeaderReturnBtn:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+/*  ------=============  Work Orders Detail Body ==========------  */
+.workorderdetailbody{
+    width:65vw;
+}
+.workorderdetailbody h3{
+  margin-bottom: 10px;
+  color: #8d7c7c;
+  font-weight: 400;
+}
+label{
+    font-weight: 600;
+   display: block;
+}
+.AddressAppointment{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+/*  ------=============  Work Orders Detail Header ==========------  */
+
+.workorderdetailheader{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.workorderdetailheader h3{
+        font-size: 21px;
+}
+
+
+
+/*  ------=============  Work Orders Detail Boxes ==========------  */
+
+.addressCard,
+.appointmentCard,
+.serviceDetailCard{
+background-color: #fff;
+    border-radius: 15px;
+box-shadow: 0px 10px 16px 0px #8d7c7c;
+    padding: 25px 30px;
+}
+.detailAddress  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+/*  ------=============  Work Orders Detail Service Box ==========------  */
+.serviceDetailCard{
+        margin: 40px 0;
+}
+
+
+/*  ------=============  Work Orders Detail Form Style -- input , select , textarea ==========------  */
+
+input,
+select,
+textarea {
+    width: 100%;
+    border: none;
+    background: #dfe3e8;
+    text-indent: 5px;
+    border-radius: 5px;
+        padding: 6px 2.5px;
+    margin: 5px 0 3px;
+}
+
+
+
+/*  ------=============  Work Orders Detail Body Custom Button ==========------  */
+.workorderdetailbtn{
+    font-size: 11px !important;
+        margin: 5px 0 !important;
+}
+
+
+
+/*  ------=============  Media Query For Large devices ==========------  */
+
+@media only screen and (max-width:1100px) {
+.workorderdetailbody {
+        width: auto;
+    }
+}
+
+/*  ------=============  Media Query For Medium devices ==========------  */
+
+@media only screen and (max-width:900px) {
+   
+        .AddressAppointment {
+            grid-template-columns: 1fr;
+    gap: 25px 15px;
+        }
+}
+
+
+/*  ------=============  Media Query For Small devices ==========------  */
+@media only screen and (max-width:500px) {
+    .detailAddress {
+        grid-template-columns: 1fr;
+    }
+}

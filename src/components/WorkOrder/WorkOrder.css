@@ -1,0 +1,76 @@
+
+        
+   /*  ------=============  Work Order  ==========------  */
+        
+.workorder{
+  height: 100vh;
+}
+
+
+   /*  ------=============  Work Order Header ==========------  */
+.WorkOrderHeader{
+    padding: 25px 0;
+}
+.WorkOrderHeader h1 {
+    color: black;
+    font-weight: 300;
+}
+
+
+   /*  ------=============  Work Order header paragraph ==========------  */
+.WorkOrderHeader p{
+        font-size: 15px;
+        font-weight: 400;
+        padding-left: 5px;
+}
+
+
+   /*  ------=============  Work Order Cards  ==========------  */
+.workordercards{
+    display:grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+     gap: 15px 15px;
+}
+
+
+
+   /*  ------=============  Media Query For extra Large Screen  ==========------  */
+
+@media only screen and (max-width:1300px) {
+.workordercards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+        
+}
+
+
+
+
+   /*  ------=============  Media Query For Large Screen  ==========------  */
+
+@media only screen and (max-width:1000px) {
+    .workordercards {
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+       
+}
+
+
+
+   /*  ------=============  Media Query For Medium Screen  ==========------  */
+@media only screen and (max-width:700px) {
+    .workordercards {
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+
+
+
+   /*  ------=============  Media Query For Small Screen  ==========------  */
+
+@media only screen and (max-width:500px) {
+    .workordercards {
+        grid-template-columns:  1fr ;
+    }
+}

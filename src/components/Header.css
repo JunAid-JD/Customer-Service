@@ -1,0 +1,107 @@
+    
+          /* ----============= Header  ==========---- */
+    
+
+
+.header{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 25px;
+        height: 70px;
+        background-color: #1a1a1a;
+    }
+
+
+                  /* ----============= Header Button ==========---- */
+.header Button{
+   border: none !important;
+   font-size: 10px !important;
+   color: #606d7f !important;
+    border-radius: 20px !important;
+} 
+.header Button:hover {
+    background-color: #fff !important;
+        border-radius: 20px !important;
+        color: black !important;
+        font-weight: 700;
+}
+
+
+                  /* ----============= Header Left ==========---- */
+.headerLeft{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.headerLeft h3{
+    color: whitesmoke;
+    font-weight: 300;
+}
+
+ 
+
+
+              /* ----============= Header Middle ==========---- */
+
+.headerMiddle {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+              /* ----============= Header Rightt ==========---- */
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.headerRight .MoreVert{
+    color: #fff !important;
+}
+.headerRight .MoreVert:hover {
+    color: black !important;
+}
+
+
+
+    /* ----============= Active Button ==========---- */
+
+.active{
+    background-color: #fff !important;
+        border-radius: 20px !important;
+}
+
+        /* ----============= Custom Button ==========---- */
+.aktive{
+    background-color: #fff !important;
+    border-radius: 20px !important;
+    color: #1a1a1a !important;
+}
+
+
+
+
+
+
+        /* ----============= Media Query for large devices ==========---- */
+
+@media only screen and (max-width:1100px) {
+.headerMiddle {
+    display: none;
+}
+}
+
+
+        /* ----============= Media Query for small devices ==========---- */
+
+@media only screen and (max-width:500px) {
+   #HeaderAddBtn {
+        display: none;
+    }
+    .headerLeft{
+        gap: 0;
+    }
+}

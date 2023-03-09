@@ -1,0 +1,27 @@
+
+
+/* ------======== body styles  --- global =============---- */
+
+
+.body{
+    background-color: whitesmoke;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        padding: 0 5rem 5rem;
+}
+
+
+
+
+
+
+
+
+/* ===========--------- media query for medium sizes -------=========== */
+
+
+@media only screen and (max-width:850px) {
+ .body {
+     padding: 0 2rem 5rem;
+ }
+}

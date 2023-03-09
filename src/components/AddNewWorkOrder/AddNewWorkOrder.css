@@ -1,0 +1,51 @@
+
+
+  /* ===========----------- Add New Work Order    ===========------ */
+.NewWorkOrder{
+ margin: 0 5rem;
+}
+
+
+
+
+  /* ===========----------- Add New Work Order Header   ===========------ */
+.AddNewWorkOrderHeader{
+    text-align: left;
+
+}
+.AddNewWorkOrderHeader h1{
+
+    color: black;
+    font-weight: 300;
+    padding: 25px 0;
+}
+
+
+
+
+
+
+
+
+
+  /* ===========----------- Media Query   ===========------ */
+
+
+
+  /* ===========----------- Media Query  Medium Devices  ===========------ */
+@media only screen and (max-width:850px) {
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+  /* ===========----------- Media Query Large Devices  ===========------ */
+@media only screen and (max-width:1100px) {
+    form {
+       width: auto;
+    }
+}

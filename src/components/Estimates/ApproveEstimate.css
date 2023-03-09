@@ -1,0 +1,82 @@
+/* ===========----------- .ApproveEstimate ===========------ */
+
+.ApproveEstimate{
+background-color: rgba(51, 48, 48,.8);
+display: flex ;
+justify-content: center;
+align-items: center;
+    height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+}
+.ApproveEstimate h3{
+  font-size: 17px;
+}
+
+/* ===========----------- .ApproveEstimate Box ===========------ */
+
+#ApproveEstimateCard{
+    width: 300px !important;
+}
+
+ #ApproveEstimateCard p{
+padding: 5px 15px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+
+/* ===========----------- .ApproveEstimate Box Header ===========------ */
+.boxheader{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #bee5e6;
+        padding: 0 15px ;
+            color: red;
+                text-transform: uppercase;
+}
+
+
+
+/* ===========----------- .ApproveEstimate Box Body ===========------ */
+.boxbody{
+    padding: 0 22px 0 15px;
+}
+.boxbody textarea{
+    outline: none;
+}
+
+
+
+/* ===========----------- .ApproveEstimate Buttons ===========------ */
+.boxbtns{
+ padding: 10px 15px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+
+/* ===========----------- .ApproveEstimate Custom Buttons ===========------ */
+
+.approveestimatebtn,.approvebtn{
+ border: 2px solid black !important;
+ font-size: 11px !important;
+text-transform: capitalize !important;
+}
+.approveestimatebtn:hover{
+    background-color: black !important;
+    color: white !important;
+}
+.approvebtn{
+    background-color: black !important;
+    color: white !important;
+    font-weight: 300 !important;
+}
+.approvebtn:hover{
+ background-color: rgb(6, 181, 250) !important;
+ border-color: rgb(6, 181, 250) !important;
+}

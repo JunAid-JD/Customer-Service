@@ -1,0 +1,152 @@
+
+
+   /* ----============= .New Work Order Request  ==========---- */
+
+.NewWorkOrderRequest{
+    background-color: #fff;
+        border-radius: 15px;
+    
+            box-shadow: 0px 20px 30px 2px #8d7c7c;
+            padding: 25px 30px;
+}
+.NewWorkOrderRequest h3{
+    font-weight: 400;
+        color: grey;
+            margin-bottom: 5px ;
+}
+
+
+   /* ----============= .New Work Order Request -- Header ==========---- */
+.mainHeader {
+    text-align: center;
+}
+
+.mainHeader h1 {
+    color: black;
+    font-weight: 300;
+    padding: 25px 0;
+}
+
+
+   /* ----============= .New Work Order Request Form  ==========---- */
+
+form{
+        display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 33px;
+        }
+form label{
+  display: block;
+  font-weight: 500;
+padding: 10px 0 5px 2px;
+}
+
+   /* ----============= .New Work Order Request Form input , select , textarea  ==========---- */
+form input,select,textarea{
+        width: 100%;
+            border: none;
+            background: #dfe3e8;
+            text-indent: 5px;
+            border-radius: 5px;
+        padding: 6px 2.5px ;
+}
+
+.MUI-Date{
+    width: 100%;
+}
+
+   /* ----============= .New Work Order Request Form Address  ==========---- */
+
+.detailAddress{
+        display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+}
+
+
+   /* ----============= .New Work Order Request Form Headings  ==========---- */
+form h3{
+     margin-top: 13px;
+}
+
+  
+
+/* ----============= .New Work Order Requestt Form Service Schedule ==========---- */
+
+
+   /* ----============= .New Work Order Request Form Servie Buttons ==========---- */
+.serviceBtns{
+    display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap:10px;
+        padding-top: 10px;
+}
+.serviceBtns Button{
+    font-size: 10px;
+    background-color: #8d7c7c;
+}
+.serviceBtns Button:hover {
+    background-color: red;
+}
+.serviceBtns .serviceActive{
+    background: rgb(219, 24, 24) !important;
+}
+
+
+
+
+   /* ----============= .New Work Order Request Form Submit button  ==========---- */
+.formRight .button{
+    margin-top: 25px;
+    width: 100%;
+    background-color: #0B2434;
+    /* color: #fff; */
+    padding: 10px 0;
+    font-size: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+ 
+
+
+
+
+
+      /* ----============= Media Query for small devices ==========---- */
+
+@media only screen and (max-width:500px) {
+    .serviceBtns {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+      /* ----============= Media Query for medium devices ==========---- */
+
+@media only screen and (max-width:850px) {
+    form {
+            display: grid;
+            grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+         /* ----============= Media Query for large devices ==========---- */
+
+@media only screen and (max-width:1000px) {
+    .detailAddress {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width:1300px) {
+    .serviceBtns {
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+    }
+}

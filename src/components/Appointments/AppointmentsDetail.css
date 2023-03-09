@@ -1,0 +1,145 @@
+
+          
+              /* ===========----------- Appointments Detail  ===========------ */
+          
+.appointmentsdetail{
+height: 100vh;
+}
+
+
+
+         /* ===========----------- Appointments Detail Card  ===========------ */
+.appointmentsdetailbody{
+    background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0px 10px 16px 0px #8d7c7c;
+        padding: 25px 30px;
+        width: 65vw;
+      
+        
+}
+
+     /* ===========----------- Appointments Detail  ===========------ */
+.appointmentdetailleftright{
+display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.appointmentsdetailbody p{
+  font-size: 14px;
+}
+
+
+       /* ===========----------- Appointments Detail Card Address  ===========------ */
+.appointmentsdetailleft{
+        line-height: .5em;
+        width: max-content;
+            line-height: 1.2em;
+                background: #e8e5e5;
+                padding: 7px 40px 7px 7px;
+                border-radius: 10px;
+}
+
+           /* ===========----------- Appointments Detail Card Buttons  ===========------ */
+.appointmentsdetailright {
+            gap: 0 8px;
+                display: flex;
+                align-items: baseline;
+                flex-wrap: wrap;
+}
+
+
+
+           /* ===========----------- Appointments Detail Card Button  ===========------ */
+.appointmentsdetailright Button{
+  font-size: 11px !important;
+  background-color: black !important;
+  color: #fff !important;
+
+}
+.appointmentsdetailright Button:hover {
+background-color: #fff !important;
+    color: black !important;
+}
+
+
+
+
+           /* ===========----------- Appointments Detail Visitors  ===========------ */
+.visitors{
+    margin-top: 10px;
+}
+.visitors p{
+    color: #6e6464;
+
+}
+
+
+
+           /* ===========----------- Appointments Detail Visitor  ===========------ */
+.visitor{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+gap: 10px;
+width: fit-content;
+/* padding-left: 12px; */
+}
+.visitor p{
+    color: black;
+    font-weight: 700;
+    padding: 5px 10px !important;
+}
+.person{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+           /* ===========----------- Media Query  ===========------ */
+
+
+
+                   /* ===========----------- Media Query  for extra large devices ===========------ */
+
+@media screen  and (max-width:1100px){
+    .appointmentsdetailright {
+        margin-top: 20px;
+    }
+        .appointmentsdetailbody {
+            width: auto;
+        }
+}
+
+
+          /* ===========----------- Media Query  for large devices ===========------ */
+@media screen and (max-width:950px) {
+    .appointmentsdetailleft {
+        width: -webkit-fill-available;
+    }
+}
+       
+
+
+      /* ===========----------- Media Query  for medium devices ===========------ */
+@media screen and (max-width:750px) {
+    .appointmentsdetailright Button {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+/* ===========----------- Media Query  for small devices ===========------ */
+@media screen and (max-width:430px) {
+    .visitor {
+            grid-template-columns: 1fr;
+    }
+                .WorkOrderHeader h1 {
+                    font-size: 25px;
+                }
+}

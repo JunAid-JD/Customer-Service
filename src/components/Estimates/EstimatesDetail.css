@@ -1,0 +1,345 @@
+
+/* ---------=============  Estimates Detail ==========--------- */
+              
+
+
+.estimatesDetail{
+    padding: 20px 0;
+        margin: 0 -2rem;
+}
+
+/* ---------=============  Estimates Detail Header ==========--------- */
+.estimatesDetailHeader{
+    display: grid;
+        grid-template-columns: 1fr 1fr;
+    /* gap: 0 10px; */
+        place-items: center;
+}
+.estimatesDetailHeaderAddress{
+    width: max-content;
+        padding-right: 17px;
+    
+}
+
+
+/* ---------=============  Estimates Detail Header Left ==========--------- */
+.estimatesDetailHeaderLeft {
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+}
+.estimatesDetailHeaderLeft p{
+    font-weight: 500;
+}
+
+.estimatesDetailHeaderEmail {
+    font-weight: 700  !important;
+    padding-left: 10px;
+}
+
+
+/* ---------=============  Estimates Detail Header Right ==========--------- */
+.estimatesDetailHeaderRight {
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 0 6px;
+        place-items: center;
+            margin-left: auto;
+    
+}
+
+
+/* ---------=============  Estimates Detail Body ==========--------- */
+.estimateDetailBody{
+background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 20px 30px 2px #8d7c7c;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+
+/* ---------=============  Estimates Detail Body  Service ==========--------- */
+.estimateDetailBodyLeftHeader{
+        display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+}
+
+/* ---------=============  Estimates Detail Body Service Header ==========--------- */
+.estimateDetailBodyLeftHeaderLeft{
+        display: flex;
+            align-items: center;
+            gap: 10px;
+}
+.estimateDetailBodyLeftHeaderLeft h3{
+    color: #d9caa5;
+}
+.estimateDetailBodyLeftHeaderRight{
+    text-align: end;
+        background: #edf0f4;
+            padding: 10px;
+                padding-bottom: 25px;
+                border-radius: 10px;
+                    font-size: 14px;
+}
+
+/* ---------=============  Estimates Detail Body Service ==========--------- */
+.estimateDetailBodyLeft{
+    border-right: 2px solid grey;
+        padding: 0 1px 0 20px;
+}
+
+
+/* ---------=============  Estimates Detail Body Service To ==========--------- */
+.BillToBody{
+        display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0 30px;
+}
+.BillToLeft,.BillToRight{
+        background: #edf0f4;
+            padding: 10px;
+                padding-right: 50px;
+                font-size: 12px;
+                border-radius: 10px;
+}
+.Bill-To h3 {
+        font-size: 15px;
+        padding-bottom: 5px;
+}
+
+/* ---------=============  Estimates Detail Body Service Provided ==========--------- */
+
+.serviceProvided h1{
+  padding: 10px 0;
+}
+
+
+/* ---------=============  Estimates Detail Body Service Provided Table ==========--------- */
+.serviceProvidedTable{
+    border-top: 2px solid grey;
+}
+.serviceProvidedTableRow{
+        border-bottom: 2px solid grey;
+            display: grid;
+            grid-template-columns: 2fr 2fr .5fr 1fr 1fr;
+            place-items: center;
+                padding: 15px 0;
+                    font-size: 12px;
+                        color: #656363;
+}
+
+.serviceTableHeader{
+        font-weight: 700;
+            color: black;
+            font-size: 15px;
+    background: #edf0f4;
+}
+
+/* ---------=============  Estimates Detail Body Service Provided total ==========--------- */
+.TableTotal{
+  width: max-content;
+    margin-left: auto;
+        font-size: 14px;
+        font-weight: 700;
+}
+.TableTotalRow{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: right;
+        padding-top: 10px;
+        border-bottom: 2px solid grey;
+        gap: 7rem;
+        padding-right: 20px;
+        
+}
+.TableTotalRow:last-child{
+    border: none;
+    padding-bottom: 20px;
+}
+
+
+/* ---------=============  Estimates Detail Payment ==========--------- */
+.estimateDetailBodyRight{
+        padding: 5px 5rem 1rem 2rem;
+}
+
+/* ---------=============  Estimates Detail Payment Form ==========--------- */
+.estimateDetailBodyRight .PaymentForm{
+    margin: 10px 0;
+    display: block;
+}
+.estimateDetailBodyRight .PaymentForm input{
+      width: 100%;
+      display: block;
+      padding: 16px 0;
+      text-indent: 10px;
+}
+
+
+/* ---------=============  Estimates Detail Payment Section ==========--------- */
+.AmountPayment div{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+}
+
+/* ---------=============  Estimates Detail Payment Method ==========--------- */
+.PaymentMethodSelection{
+    list-style: none;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    position: absolute;
+    top: 20px;
+        right: -120px;
+        display: none;
+        }
+.PaymentMethodSelection li{
+    margin: 5px 0;
+}
+.PaymentMethodSelection li:hover{
+background: #edf0f4;
+}
+
+
+
+
+.AmountPayment div:first-child{
+
+    padding-bottom: 10px;
+}
+
+
+/* ---------=============  Estimates Detail Payment Form Date ==========--------- */
+.amountPaymentFormDate{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    gap: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /////////////////// Media Query ///////////// */
+
+/* ---------=============  Media Query For small devices ==========--------- */
+
+@media screen and (max-width:500px) {
+.estimatesDetailHeaderLeft {
+        grid-template-columns: 1fr ;
+        gap: 8px 0;
+    }
+        .estimateDetailBody {
+            padding: 0;
+        }
+                .estimateDetailBody h1{
+                 font-size: 27px;
+                }
+}
+
+
+/* ---------=============  Media Query For Tablets devices ==========--------- */
+@media screen and (max-width:668px) {
+.estimatesDetailHeaderRight {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 6px;
+}
+.estimatesDetailHeaderLeft {
+        display: grid;
+            grid-template-columns: 1fr;
+}
+.BillToBody {
+    grid-template-columns: 1fr;
+    gap: 20px 30px;
+}
+.estimateDetailBodyLeftHeader {
+    display: block;
+}
+.estimateDetailBodyLeftHeaderRight {
+    text-align: start;
+}
+.amountPaymentFormDate {
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+.Bill-To{
+    padding-top: 15px;
+}
+}
+
+
+/* ---------=============  Media Query For Medium devices ==========--------- */
+@media screen and (max-width:850px) {
+.estimatesDetail {
+        margin: 0;
+    }
+}
+
+/* ---------=============  Media Query For Large devices ==========--------- */
+@media screen and (max-width:1150px) {
+
+.estimateDetailBody {
+    grid-template-columns: 1fr;
+}
+.estimateDetailBodyLeft {
+    border-bottom: 2px solid grey;
+    border-right: 0;
+    padding: 0 10px 0 20px;
+    margin-bottom: 15px;
+}
+.estimateDetailBodyRight {
+    padding: 5px 10px 1rem 2rem;
+}
+
+}
+
+
+
+
+
+/* ---------=============  Media Query For Extra Large devices ==========--------- */
+
+
+@media screen and (max-width:1300px) {
+    .estimatesDetailHeader {
+        grid-template-columns: 1fr;
+    }
+        .estimatesDetailHeaderAddress {
+            padding-right: 0;
+        }
+
+    .estimatesDetailHeaderRight {
+        margin-left: 0;
+        margin-top: 15px;
+        place-items: center;
+    }
+
+    .estimatesDetailHeaderLeft {
+        place-items: center;
+    }
+
+    .estimatesDetailHeaderEmail {
+        padding-left: 0;
+    }
+}
+
+
+
+

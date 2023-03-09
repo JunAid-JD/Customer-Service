@@ -1,0 +1,47 @@
+
+    
+              /* ---------============= Estimates  Details Cards ==========--------- */
+          
+
+.estimatecards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px 0;
+}
+
+
+/* ===========----------- Media Query ===========------ */
+
+/* ===========----------- Media Query for extra large devices ===========------ */
+
+@media only screen and (max-width:1300px) {
+    .estimatecards {
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+
+    .workorder {
+        height: 100%;
+    }
+}
+
+/* ===========----------- Media Query for large devices ===========------ */
+@media only screen and (max-width:1000px) {
+    .estimatecards {
+        grid-template-columns: 1fr 1fr ;
+    }
+
+}
+
+/* ===========----------- Media Query for Medium devices ===========------ */
+@media only screen and (max-width:700px) {
+    .estimatecards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ===========----------- Media Query for small devices ===========------ */
+@media only screen and (max-width:650px) {
+    .estimatecards {
+        grid-template-columns: 1fr;
+    }
+}
