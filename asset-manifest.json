@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/Customer-Service/static/css/main.0d4a6ac3.css",
-    "main.js": "/Customer-Service/static/js/main.0c708f09.js",
+    "main.css": "/Customer-Service/static/css/main.a3c96f0e.css",
+    "main.js": "/Customer-Service/static/js/main.557974c6.js",
+    "static/media/Gilroy-Light.otf": "/Customer-Service/static/media/Gilroy-Light.cc7ab55d27205bd64001.otf",
     "index.html": "/Customer-Service/index.html",
-    "main.0d4a6ac3.css.map": "/Customer-Service/static/css/main.0d4a6ac3.css.map",
-    "main.0c708f09.js.map": "/Customer-Service/static/js/main.0c708f09.js.map"
+    "main.a3c96f0e.css.map": "/Customer-Service/static/css/main.a3c96f0e.css.map",
+    "main.557974c6.js.map": "/Customer-Service/static/js/main.557974c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d4a6ac3.css",
-    "static/js/main.0c708f09.js"
+    "static/css/main.a3c96f0e.css",
+    "static/js/main.557974c6.js"
   ]
 }
