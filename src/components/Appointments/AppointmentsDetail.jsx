@@ -3,6 +3,8 @@ import "./AppointmentsDetail.css";
 import { Email, Reply, ShoppingBag, WatchLater } from "@mui/icons-material";
 import { Avatar, Button } from "@mui/material";
 import { NavLink } from "react-router-dom";
+import Person1 from "./p1.jpg";
+import Person2 from "./p2.jpg";
 
 const AppointmentsDetail = () => {
   return (
@@ -38,7 +40,7 @@ const AppointmentsDetail = () => {
               Visit: <strong>22 July, 2021</strong>
             </p>
 
-            <p style={{ color: "grey" }}>
+            <p style={{ color: "rgb(105 103 104)", fontWeight: "500" }}>
               797 O'Conner Radial Kira <br /> Junction New Brain
             </p>
           </div>
@@ -77,11 +79,11 @@ const AppointmentsDetail = () => {
           <p>Coming for visit:</p>
           <section className="visitor">
             <div className="person">
-              <Avatar src="/p1.jpg" />
+              <Avatar src={Person1} />
               <p>Jim Kage</p>
             </div>
             <div className="person">
-              <Avatar src="/p2.jpg" />
+              <Avatar src={Person2} />
               <p>John Doe</p>
             </div>
           </section>

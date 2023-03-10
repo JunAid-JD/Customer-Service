@@ -19,8 +19,8 @@ const Estimates = () => {
       {/* ---------============= Estimates  Cards ==========--------- */}
 
       <div className="workordercards">
-        <EstimatesCard />
-        <EstimatesCard />
+        <EstimatesCard Approval="Waiting for Approval" Color="#E73844" />
+        <EstimatesCard Approval="Approved" Color="#90ee90" />
       </div>
     </div>
   );

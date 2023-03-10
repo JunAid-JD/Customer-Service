@@ -195,17 +195,18 @@ background-color: #fff;
     background-color: #fff;
     padding: 10px;
     border-radius: 10px;
-    font-weight: 600;
+    font-weight: 400;
     position: absolute;
     top: 20px;
-        right: -120px;
-        display: none;
+        right: -90px;
+        /* display: none; */
         }
 .PaymentMethodSelection li{
     margin: 5px 0;
 }
 .PaymentMethodSelection li:hover{
 background: #edf0f4;
+    font-weight: 600;
 }
 
 
@@ -290,6 +291,10 @@ background: #edf0f4;
 .estimatesDetail {
         margin: 0;
     }
+        .estimateDetailBodyLeftHeaderLeft {
+           
+            margin-top: 10px;
+        }
 }
 
 /* ---------=============  Media Query For Large devices ==========--------- */

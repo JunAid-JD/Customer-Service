@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./EstimatesDetail.css";
 import { Download, Reply, ArrowDropDown } from "@mui/icons-material";
 import { Button } from "@mui/material";
 import { NavLink } from "react-router-dom";
 
 const EstimatesDetail = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className="estimatesDetail">
       {/* ---------=============  Estimate Details  ==========--------- */}
@@ -79,7 +84,7 @@ const EstimatesDetail = () => {
 
               <div className="estimateDetailBodyLeftHeaderLeft">
                 <h1>Estimate #0271</h1>
-                <h3>Approved</h3>
+                <h3 style={{ color: "#90ee90" }}>Approved</h3>
               </div>
               {/* ---------=============  Estimate Details Service Invoice Date ==========--------- */}
 
@@ -102,7 +107,6 @@ const EstimatesDetail = () => {
                   <div className="BillToNameAddress">
                     <h3>James Doe</h3>
                     <p style={{ paddingBottom: "10px" }}>
-                      {" "}
                       1234 New Ballwin Road,mo 63011
                     </p>
                   </div>
@@ -113,14 +117,12 @@ const EstimatesDetail = () => {
                 </div>
                 <div className="BillToRight">
                   <p style={{ paddingBottom: "10px" }}>
-                    Thank you for your business.PLease contact us
-                    {/* <br /> */}
-                    with any question regarding this estimate.
+                    Thank you for your business.PLease contact us with any
+                    question regarding this estimate.
                   </p>
                   <p>
-                    If your estimate is showing deposit required,
-                    {/* <br /> */}
-                    please make your deposit so we can perform the job
+                    If your estimate is showing deposit required, please make
+                    your deposit so we can perform the job
                   </p>
                 </div>
               </div>
@@ -195,17 +197,20 @@ const EstimatesDetail = () => {
                 endIcon={<ArrowDropDown />}
                 className="aktive "
                 id="HeaderReturnBtn"
+                onClick={toggleDropdown}
               >
                 <p style={{ fontWeight: "400", fontSize: "11px" }}>
                   Payment Method
                 </p>
               </Button>
-              <ul className="PaymentMethodSelection">
-                <li>Debit/Credit Card</li>
-                <li>Cash</li>
-                <li>Check</li>
-                <li>Bank Account</li>
-              </ul>
+              {isOpen && (
+                <ul className="PaymentMethodSelection">
+                  <li>Debit/Credit Card</li>
+                  <li>Cash</li>
+                  <li>Check</li>
+                  <li>Bank Account</li>
+                </ul>
+              )}
             </div>
           </div>
           {/* ---------=============  Estimate  Payment Details ==========--------- */}

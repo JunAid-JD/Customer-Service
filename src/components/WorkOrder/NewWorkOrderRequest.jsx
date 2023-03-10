@@ -2,9 +2,19 @@ import { Button } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import "./NewWorkOrderRequest.css";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
+import { useState } from "react";
 // import { StaticDatePicker } from "@mui/x-date-pickers/StaticDatePicker";
 
 const NewWorkOrderRequest = () => {
+  const [selectService, setSelectService] = useState("oneTime");
+  const [selectTime, setSelectTime] = useState("FirstAvailable");
+
+  const handleServiceBtn = (button) => {
+    setSelectService(button);
+  };
+  const handleTimeBtn = (button) => {
+    setSelectTime(button);
+  };
   return (
     <>
       {/*  ------============= Header ==========------  */}
@@ -92,14 +102,36 @@ const NewWorkOrderRequest = () => {
             <div className="serviceBtns">
               <Button
                 variant="contained"
-                color="error"
-                className="serviceActive"
+                className={selectService === "oneTime" ? "serviceSelected" : ""}
+                onClick={() => handleServiceBtn("oneTime")}
               >
                 One Time
               </Button>
-              <Button variant="contained">Every Week</Button>
-              <Button variant="contained">Every 2 weeks</Button>
-              <Button variant="contained">Monthly</Button>
+              <Button
+                variant="contained"
+                className={
+                  selectService === "EveryWeek" ? "serviceSelected" : ""
+                }
+                onClick={() => handleServiceBtn("EveryWeek")}
+              >
+                Every Week
+              </Button>
+              <Button
+                variant="contained"
+                className={
+                  selectService === "Every2Weeks" ? "serviceSelected" : ""
+                }
+                onClick={() => handleServiceBtn("Every2Weeks")}
+              >
+                Every 2 weeks
+              </Button>
+              <Button
+                variant="contained"
+                className={selectService === "Monthly" ? "serviceSelected" : ""}
+                onClick={() => handleServiceBtn("Monthly")}
+              >
+                Monthly
+              </Button>
             </div>
 
             {/*  ------============= New Work Order Request Form Schedule Appointments ==========------  */}
@@ -113,20 +145,40 @@ const NewWorkOrderRequest = () => {
             <div className="serviceBtns">
               <Button
                 variant="contained"
-                color="error"
-                className="serviceActive"
+                className={
+                  selectTime === "FirstAvailable" ? "serviceSelected" : ""
+                }
+                onClick={() => handleTimeBtn("FirstAvailable")}
               >
                 First Available
               </Button>
-              <Button variant="contained">Morning</Button>
-              <Button variant="contained">Afternoon</Button>
-              <Button variant="contained">Evening</Button>
+              <Button
+                variant="contained"
+                className={selectTime === "Morning" ? "serviceSelected" : ""}
+                onClick={() => handleTimeBtn("Morning")}
+              >
+                Morning
+              </Button>
+              <Button
+                variant="contained"
+                className={selectTime === "Afternoon" ? "serviceSelected" : ""}
+                onClick={() => handleTimeBtn("Afternoon")}
+              >
+                Afternoon
+              </Button>
+              <Button
+                variant="contained"
+                className={selectTime === "Evening" ? "serviceSelected" : ""}
+                onClick={() => handleTimeBtn("Evening")}
+              >
+                Evening
+              </Button>
             </div>
 
             {/*  ------============= New Work Order Request Form Submit Button ==========------  */}
 
             <NavLink to="/WorkOrder">
-              <Button className="button" color="error" variant="contained">
+              <Button className="button" variant="contained">
                 Book Now
               </Button>
             </NavLink>

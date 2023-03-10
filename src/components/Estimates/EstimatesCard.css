@@ -5,5 +5,5 @@
 .cardheader{
     display: flex;
     justify-content: space-between;
-    color: grey;
+    font-weight: 600;
 }

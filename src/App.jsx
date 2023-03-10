@@ -32,7 +32,10 @@ const App = () => {
           {/* ---------=============  Work Order ==========--------- */}
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <Routes>
-              <Route path="/" element={<NewWorkOrderRequest />} />
+              <Route
+                path="/Customer-Service"
+                element={<NewWorkOrderRequest />}
+              />
               <Route path="/WorkOrder" element={<SharedWorkOrder />}>
                 <Route index element={<WorkOrder />} />
                 <Route

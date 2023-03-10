@@ -11,7 +11,7 @@
 }
 .NewWorkOrderRequest h3{
     font-weight: 400;
-        color: grey;
+        color: #8F8F8F;
             margin-bottom: 5px ;
 }
 
@@ -83,13 +83,13 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .serviceBtns Button{
     font-size: 10px;
-    background-color: #8d7c7c;
+    background-color: #8F8F8F;
 }
 .serviceBtns Button:hover {
-    background-color: red;
+    background-color: #E73844;
 }
-.serviceBtns .serviceActive{
-    background: rgb(219, 24, 24) !important;
+.serviceBtns .serviceSelected{
+    background: #E73844 !important;
 }
 
 
@@ -99,12 +99,15 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
 .formRight .button{
     margin-top: 25px;
     width: 100%;
-    background-color: #0B2434;
-    /* color: #fff; */
+    background-color: #0B181C;
+    color: #fff !important;
     padding: 10px 0;
     font-size: 12px;
     border-radius: 10px;
     cursor: pointer;
+}
+.formRight .button:hover {
+    background-color: #17323a;
 }
 
  

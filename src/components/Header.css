@@ -16,8 +16,8 @@
                   /* ----============= Header Button ==========---- */
 .header Button{
    border: none !important;
-   font-size: 10px !important;
-   color: #606d7f !important;
+   font-size: 11px !important;
+   color: #8F8F8F ;
     border-radius: 20px !important;
 } 
 .header Button:hover {
@@ -25,6 +25,13 @@
         border-radius: 20px !important;
         color: black !important;
         font-weight: 700;
+}
+
+.pageSelected{
+background-color: #fff !important;
+    border-radius: 20px !important;
+    color: black !important;
+    font-weight: 700;
 }
 
 
@@ -52,14 +59,22 @@
 }
 
 
-              /* ----============= Header Rightt ==========---- */
+  
+
+/* ----============= Header Rightt ==========---- */
 .headerRight {
     display: flex;
     align-items: center;
     gap: 5px;
 }
-.headerRight .MoreVert{
+
+
+/* ----============= Header MenuBtn ==========---- */
+
+
+.headerRight .MoreVert {
     color: #fff !important;
+    display: none;
 }
 .headerRight .MoreVert:hover {
     color: black !important;
@@ -88,20 +103,66 @@
 
         /* ----============= Media Query for large devices ==========---- */
 
-@media only screen and (max-width:1100px) {
+@media only screen and (max-width:1050px) {
 .headerMiddle {
     display: none;
 }
+.headerRight .MoreVert {
+    display: block;
+}
+        /* ----============= Header OpenMenu ==========---- */
+    
+        .openMenu {
+            position: absolute;
+            top: 70px;
+            left: 0;
+            background: black;
+            width: 100%;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+        }
 }
 
 
         /* ----============= Media Query for small devices ==========---- */
 
-@media only screen and (max-width:500px) {
-   #HeaderAddBtn {
+@media only screen and (max-width:530px) {
+.headerLeft {
+    gap: 0px;
+}
+ .headerLeft h3 {
+     font-size: 15px !important;
+ }
+
+}
+
+
+
+
+
+@media only screen and (max-width:470px) {
+   /* #HeaderAddBtn {
         display: none;
+    } */
+   
+        .headerRight {
+            gap:0;
+        }
+    .header{
+            margin: 0px 1px;
     }
-    .headerLeft{
-        gap: 0;
+    
+    .header Button {
+        font-size: 8px !important;
     }
+        .headerLeft h3 {
+        font-size: 9px !important;
+        }
+        .openMenu{
+            gap: 30px 0;
+        }
 }

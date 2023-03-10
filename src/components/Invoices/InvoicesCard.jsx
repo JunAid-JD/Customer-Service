@@ -3,7 +3,7 @@ import { Button } from "@mui/material";
 import Card from "@mui/material/Card";
 import { NavLink } from "react-router-dom";
 
-const InvoicesCard = () => {
+const InvoicesCard = ({ paid, Color }) => {
   return (
     <div>
       {/* ---------=============   Card  ==========--------- */}
@@ -12,7 +12,7 @@ const InvoicesCard = () => {
         <Card className="card">
           <div className="cardheader">
             <button>1</button>
-            <p>Paid</p>
+            <p style={{ color: Color }}>{paid}</p>
           </div>
 
           {/* ---------=============  Issued Date  ==========--------- */}

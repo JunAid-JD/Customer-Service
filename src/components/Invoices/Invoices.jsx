@@ -21,8 +21,8 @@ const Invoices = () => {
         <div className="workordercards">
           {/* ---------=============  Invoices Cards  ==========--------- */}
 
-          <InvoicesCard />
-          <InvoicesCard />
+          <InvoicesCard paid="unpaid" Color="#E73844" />
+          <InvoicesCard paid="Paid" Color="#90ee90" />
         </div>
       </div>
     </div>

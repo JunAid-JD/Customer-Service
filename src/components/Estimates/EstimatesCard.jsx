@@ -4,7 +4,7 @@ import Card from "@mui/material/Card";
 import { NavLink } from "react-router-dom";
 import "./EstimatesCard.css";
 
-const EstimatesCard = () => {
+const EstimatesCard = ({ Approval, Color }) => {
   return (
     <div className="EstimatesCard">
       {/* ---------=============   Estimates Card   ==========--------- */}
@@ -13,7 +13,7 @@ const EstimatesCard = () => {
 
         <div className="cardheader">
           <button>1</button>
-          <p>Waiting for Approval</p>
+          <p style={{ color: Color }}>{Approval}</p>
         </div>
 
         {/* ---------=============   Estimates Card Time  ==========--------- */}

@@ -2,8 +2,14 @@ import React from "react";
 import { Reply, ArrowDropDown } from "@mui/icons-material";
 import { Button } from "@mui/material";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 const InvoicesDetail = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div>
       {/* ---------=============  Invoice Details  ==========--------- */}
@@ -38,25 +44,25 @@ const InvoicesDetail = () => {
               </Button>
             </NavLink>
 
-            <div className="action">
+            <div className="action" style={{ position: "relative" }}>
               <Button
                 variant="contained"
                 endIcon={<ArrowDropDown />}
                 className="aktive "
                 id="HeaderReturnBtn"
+                onClick={toggleDropdown}
               >
                 Action
               </Button>
-              <ul
-                className="PaymentMethodSelection"
-                style={{ display: "none" }}
-              >
-                <li>Print</li>
-                <li>Copy</li>
-                <li>Download PDF</li>
-                <li>Share Link</li>
-                <li>Delete</li>
-              </ul>
+              {isOpen && (
+                <ul className="PaymentMethodSelection">
+                  <li>Print</li>
+                  <li>Copy</li>
+                  <li>Download PDF</li>
+                  <li>Share Link</li>
+                  <li>Delete</li>
+                </ul>
+              )}
             </div>
           </div>
         </div>
@@ -75,7 +81,7 @@ const InvoicesDetail = () => {
 
                 <div className="estimateDetailBodyLeftHeaderLeft">
                   <h1>Invoices #0271</h1>
-                  <h3>Unpaid</h3>
+                  <h3 style={{ color: "#E73844" }}>Unpaid</h3>
                 </div>
 
                 {/* ---------=============  Invoice Details Service Invoice Date ==========--------- */}

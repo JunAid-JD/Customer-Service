@@ -1,16 +1,25 @@
 *{
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   margin: 0;
   padding: 0; 
 }
 
-
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/public/fonts/Gilroy-Light.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /*  ------============ Global Styles  ==========------ */
  
 body{
   background-color: #1a1a1a;
+  font-family: 'Gilroy', sans-serif;
 }
 a{
   text-decoration: none;
+}
+Button{
+    text-transform: capitalize !important;
 }

@@ -18,7 +18,6 @@ const WorkOrderDetail = () => {
           </div>
           <NavLink to="/WorkOrder">
             <Button
-              color="success"
               variant="contained"
               startIcon={<Reply />}
               className="aktive "
@@ -77,7 +76,7 @@ const WorkOrderDetail = () => {
               </label>
               <Button
                 variant="contained"
-                color="error"
+                style={{ background: "#E73844" }}
                 className="workorderdetailbtn"
               >
                 One Time
@@ -91,7 +90,7 @@ const WorkOrderDetail = () => {
               </label>
               <Button
                 variant="contained"
-                color="error"
+                style={{ background: "#E73844" }}
                 className="workorderdetailbtn"
               >
                 First Available
