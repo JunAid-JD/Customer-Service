@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Customer-Service/static/css/main.a380cc81.css",
-    "main.js": "/Customer-Service/static/js/main.3c8546c0.js",
+    "main.css": "/Customer-Service/static/css/main.e2c34d18.css",
+    "main.js": "/Customer-Service/static/js/main.39e41ba5.js",
     "static/media/Gilroy-Light.otf": "/Customer-Service/static/media/Gilroy-Light.cc7ab55d27205bd64001.otf",
     "static/media/p2.jpg": "/Customer-Service/static/media/p2.8732aa377888dc5873fb.jpg",
     "static/media/p1.jpg": "/Customer-Service/static/media/p1.58081dc8c31bc0e1cb6c.jpg",
     "index.html": "/Customer-Service/index.html",
-    "main.a380cc81.css.map": "/Customer-Service/static/css/main.a380cc81.css.map",
-    "main.3c8546c0.js.map": "/Customer-Service/static/js/main.3c8546c0.js.map"
+    "main.e2c34d18.css.map": "/Customer-Service/static/css/main.e2c34d18.css.map",
+    "main.39e41ba5.js.map": "/Customer-Service/static/js/main.39e41ba5.js.map"
   },
   "entrypoints": [
-    "static/css/main.a380cc81.css",
-    "static/js/main.3c8546c0.js"
+    "static/css/main.e2c34d18.css",
+    "static/js/main.39e41ba5.js"
   ]
 }
